@@ -1,11 +1,14 @@
 .edit-container {
   min-width: 550px;
   min-height: 450px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   padding-top: 5px;
+  height: fit-content;
+  margin: 0 auto;
 }
 
 .edit-header {
@@ -14,6 +17,15 @@
   overflow-x: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   user-select: none;
+}
+
+.edit-header::-webkit-scrollbar {
+  height: 7px;
+}
+
+.edit-header::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #c7c7c7;
 }
 
 .edit-header .section {
@@ -115,7 +127,7 @@ textarea:focus {
   background-color: #239ce2;
 }
 
-.edit-body button{
+.edit-body button {
   width: fit-content;
   padding: 8px 16px;
   border-radius: 8px;
@@ -133,13 +145,13 @@ textarea:focus {
   transition: 200ms;
 }
 
-.edit-body button:active{
+.edit-body button:active {
   transform: translateY(2px);
 }
 
-.chips .new{
-    color: #2392e2;
-    font-weight: bold;
-    letter-spacing: 1px;
-    cursor: pointer;
+.chips .new {
+  color: #2392e2;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
