@@ -55,7 +55,7 @@ const Body = () => {
     [sections.other]: {
       id: sections.other,
       sectionTitle: sections.other,
-      details: "",
+      detail: "",
     },
   });
 
